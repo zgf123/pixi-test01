@@ -1,6 +1,10 @@
 <script setup lang="ts">
 // import FistApp from './PixiDemo/01FirstApp.vue'
-import Demo from './PixiDemo/05Events.vue'
+// import Demo from './PixiDemo/05Events.vue'
+// import Demo from './PixiDemo/06LoadResource.vue'
+// import Demo from './PixiDemo/07Mask.vue'
+// import Demo from './PixiDemo/08Filter.vue'
+import Demo from './PixiDemo/09Example.vue'
 </script>
 
 <template>

@@ -15,7 +15,7 @@ onMounted(() => {
   pixiCanvasRef.value?.appendChild<any>(app.view)
 
   // 创建一个纹理
-  const texture = PIXI.Texture.from('./textures/mujian.png')
+  const texture = PIXI.Texture.from('/textures/mujian.png')
 
   // 创建一个精灵
   const sprite = new PIXI.Sprite(texture)
