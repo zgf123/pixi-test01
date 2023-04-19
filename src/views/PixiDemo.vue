@@ -25,11 +25,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="pixiCanvasRef" ref="pixiCanvasRef"></div>
+  <div class="canvasWrapper" ref="pixiCanvasRef"></div>
 </template>
 
 <style type="less" scoped>
-.pixiCanvasRef {
+.canvasWrapper {
   width: 100vw;
   height: 100vh;
 }
