@@ -22,8 +22,8 @@ onMounted(() => {
   rect.endFill()
 
   // 图形的定位
-  // rect.x = 20
-  // rect.y = 20
+  rect.x = 200
+  rect.y = 20
   // rect.position.set(20, 20)
 
   // 图形的大小和缩放
@@ -34,7 +34,7 @@ onMounted(() => {
   // rect.scale.set(2, 2) // 缩放：x, y
 
   // 图形的旋转
-  rect.rotation = 0.2
+  // rect.rotation = 0.2
   // 设置中心点
   // rect.pivot.x = 0
   // rect.pivot.y = 0

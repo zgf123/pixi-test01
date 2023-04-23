@@ -59,17 +59,24 @@ onMounted(() => {
 
   // 绘制1个矩形
   const rect = new PIXI.Graphics()
-  rect.beginFill(0xff0000)
+  rect.beginFill('deeppink')
   rect.drawRect(0, 0, 100, 100)
   rect.endFill()
   rect.x = 100
   rect.y = 100
+  // 修改矩形的轴心点
+  rect.pivot.set(50, 50)
   app.stage.addChild(rect)
 
   // 给矩形添加交互事件
   rect.interactive = true
   rect.on('click', () => {
     console.log('rect click')
+  })
+
+  app.ticker.add((delta) => {
+    // 让矩形旋转起来
+    rect.rotation += 0.1 * delta
   })
 })
 </script>

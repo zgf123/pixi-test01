@@ -1,10 +1,13 @@
+<template>
+  <div ref="pixiCanvasRef"></div>
+</template>
+
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import * as PIXI from 'pixi.js'
 
 const app = new PIXI.Application({
-  width: 900,
-  height: 600,
+  resizeTo: window,
   backgroundColor: 'grey',
   resolution: 1, // 分辨率
   antialias: true // 抗锯齿
@@ -23,14 +26,3 @@ onMounted(() => {
   app.stage.addChild(rect)
 })
 </script>
-
-<template>
-  <div class="canvasWrapper" ref="pixiCanvasRef"></div>
-</template>
-
-<style type="less" scoped>
-.canvasWrapper {
-  width: 100vw;
-  height: 100vh;
-}
-</style>
