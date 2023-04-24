@@ -16,7 +16,7 @@ onMounted(() => {
   pixiCanvasRef.value?.appendChild<any>(app.view)
 
   // 创建一个纹理
-  const texture = PIXI.Texture.from('./textures/car.jpg')
+  const texture = PIXI.Texture.from('./textures/meinv01.png')
   // 创建一个精灵
   const sprite = new PIXI.Sprite(texture)
   sprite.width = app.screen.width
@@ -30,7 +30,7 @@ onMounted(() => {
   app.stage.addChild(container)
 
   // 添加文字
-  const text = new PIXI.Text('Hello PixiJS', {
+  const text = new PIXI.Text('你好! 世界。', {
     fontFamily: 'Arial',
     fontSize: 30 + Math.floor(app.screen.width * 0.1),
     fill: 0xffffff,
@@ -89,7 +89,7 @@ onMounted(() => {
 
   const filter4 = new ReflectionFilter({
     mirror: true,
-    boundary: 0.9,
+    boundary: 0.8,
     time: 10
   })
 
